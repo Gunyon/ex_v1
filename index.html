@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Curs valutar</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="valute.js"></script>
+	</head>
+	<body onload="process()">
+		<table class="maintable" align="center" width="600" border="0" cellspacing="0">
+			<tr>
+				<td align="center" colspan="2">
+					<h1 class="toptext">Curs valutar Banca Naţională a Moldovei</h1>
+				</td>
+			</tr>
+			<tr>
+				<td class="menu" align="center" colspan="2">
+					<a class="menuitem" href="index.html">Principala</a>
+					<a class="menuitem" href="allvalute.html">Toate valutele</a>
+					<a class="menuitem" href="news.html">Stiri</a>
+					<a class="menuitem" href="contact.html">Contacte</a>
+				</td>
+			</tr>
+			<tr valign="top">
+				<td>
+					<div class="convertor">
+						<h2 class="convtop">Convertor valutar</h2>
+						<br />
+						<span class="from">Introdu suma</span> <span class="seltext">Din</span>
+						<br />
+						<input type="text" id="inputfrom" size="10" maxlength="10" allowed=".0123456789" messageid="zipwarn" />
+						<select id="selectfrom">
+							<option value="MDL">MDL Leu Moldovenesc</option>
+						</select>
+						<br />
+						<span id="zipwarn" style="color:red;visibility:hidden">Introduceţi cifre</span>
+						<div class="swap">
+							<a href="#" id="swap"><img src="img/swap.png" border="0"></a>
+						</div>
+						<br />
+						<span class="to">Rezultat</span> <span class="seltext">In</span>
+						<br />
+						<input type="text" id="inputto" size="10" allowed=" " />
+						<select id="selectto">
+							<option value="MDL">MDL Leu Moldovenesc</option>
+						</select>
+						<br />
+						<a href="#"><img border="0" id="clearbtn" src="img/clear.png" /></a>
+					</div>
+				</td>
+				<td>
+					<table class="table2" width="320" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td class='tabel_c1'>
+								<img class='v_align' src='img/countries/eur.jpg' alt='EUR'>
+								<span class='textmare'>EUR</span>
+								<span class='textspacer'></span>
+								<span class='namevalute'>Euro</span>
+							</td>
+							<td id="eur" class='tabel_c2'>
+							</td>
+						</tr>
+						<tr>
+							<td class='tabel_c1'>
+								<img class='v_align' src='img/countries/usd.jpg' alt='EUR'>
+								<span class='textmare'>USD</span>
+								<span class='textspacer'></span>
+								<span class='namevalute'>Dolar S.U.A.</span>
+							</td>
+							<td id="usd" class='tabel_c2'>
+							</td>
+						</tr>
+						<tr>
+							<td class='tabel_c1'>
+								<img class='v_align' src='img/countries/gbp.jpg' alt='GBP'>
+								<span class='textmare'>GBP</span>
+								<span class='textspacer'></span>
+								<span class='namevalute'>Lira sterlina</span>
+							</td>
+							<td id="gbp" class='tabel_c2'>
+							</td>
+						</tr>
+						<tr>
+							<td class='tabel_c1'>
+								<img class='v_align' src='img/countries/ron.jpg' alt='RON'>
+								<span class='textmare'>RON</span>
+								<span class='textspacer'></span>
+								<span class='namevalute'>Leu romanesc</span>
+							</td>
+							<td id="ron" class='tabel_c2'>
+							</td>
+						</tr>
+						<tr>
+							<td class='tabel_c1'>
+								<img class='v_align' src='img/countries/rub.jpg' alt='RUB'>
+								<span class='textmare'>RUB</span>
+								<span class='textspacer'></span>
+								<span class='namevalute'>Rubla rusa</span>
+							</td>
+							<td id="rub" class='tabel_c2'>
+							</td>
+						</tr>
+						<tr>
+							<td class='tabel_c1'>
+								<img class='v_align' src='img/countries/uah.jpg' alt='UAH'>
+								<span class='textmare'>UAH</span>
+								<span class='textspacer'></span>
+								<span class='namevalute'>Hrivna ucraineana</span>
+							</td>
+							<td id="uah" class='tabel_c2'>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">&nbsp;</td>
+			</tr>
+		</table>
+	</body>
+</html>
